@@ -1,19 +1,20 @@
 import PropTypes from 'prop-types';
 import { Statistic } from './Statistic';
+import css from './Statistic.module.css';
 
-export const StatisticsList = ({ items }) => {
+export const StatisticsList = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+    <section className={css.statistics}>
+      <h2 className={css.title}>{title}</h2>
 
-      <ul className="stat-list">
-        {items.map(item => (
+      <ul className={css.stat_list}>
+        {stats.map(stat => (
           <li
-            className="item"
-            key={item.id}
+            className={css.item}
+            key={stat.id}
             style={{ backgroundColor: getRandomHexColor() }}
           >
-            <Statistic item={item} />
+            <Statistic item={stat} />
           </li>
         ))}
       </ul>
