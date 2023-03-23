@@ -1,21 +1,21 @@
 .profile {
   font-size: 24px;
-  width: 500px;
-  padding: 100px;
-  background-color: rgb(233, 237, 244);
+
+  padding: 120px;
+  background-color: rgba(88, 125, 206, 0.2);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .description {
   text-align: center;
-
   padding: 60px;
   margin: auto;
   background-color: white;
+  border-radius: 4px 4px 0 0;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .avatar {
   padding: 0px;
-  width: 300px;
+  width: 200px;
   border: 1px solid transparent;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
@@ -39,24 +39,25 @@
 .stats {
   display: flex;
   justify-content: space-evenly;
+  border-radius: 0 0 4px 4px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .profile li {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  background-color: rgb(243, 247, 249);
+  background-color: rgba(253, 254, 255, 0.432);
   padding: 20px;
 }
 .profile li :last-child {
   margin-right: auto;
 }
 .label {
-  margin: 10px auto;
+  margin: 0 auto;
   color: slategray;
 }
 
 .quantity {
-  margin: 10px auto;
+  margin: 0 auto;
   font-weight: 800;
 }
